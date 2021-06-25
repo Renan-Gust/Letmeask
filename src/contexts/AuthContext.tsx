@@ -40,7 +40,7 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
             }
         })
 
-        return() => {
+        return () => {
             unsubscribe()
         }
     }, [])
