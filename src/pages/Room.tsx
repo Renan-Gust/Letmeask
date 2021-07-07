@@ -6,6 +6,8 @@ import logoImg from '../assets/images/logo.svg'
 import { Button } from '../components/Button'
 import { Question } from '../components/Question'
 import { RoomCode } from '../components/RoomCode'
+import { Theme } from '../components/Theme'
+
 import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
 import { database } from '../services/firebase'
@@ -65,6 +67,7 @@ export function Room() {
                 <div className="content">
                     <img src={logoImg} alt="Letmeask" />
                     <RoomCode code={roomId} />
+                    <Theme />
                 </div>
             </header>
 
@@ -88,7 +91,7 @@ export function Room() {
                                 <span>{user.name}</span>
                             </div>
                         ) : (
-                            <span>Para enviar uma perguntar, <button>Faça seu login.</button></span>
+                        <span>Para enviar uma perguntar, <button>Faça seu login.</button></span>
                         ) }
                         <Button type="submit" disabled={!user}>Enviar pergunta</Button>
                     </div>

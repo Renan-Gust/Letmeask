@@ -27,7 +27,7 @@ export function Question({
                 'question',
                 { answered: isAnswered },
                 { highLighted: isHighLighted && !isAnswered },
-                )}
+            )}
         >
             <p>{content}</p>
             <footer>
