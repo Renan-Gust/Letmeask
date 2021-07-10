@@ -29,9 +29,13 @@
             }
         }
     }
+
+    .dark-mode button{
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
     #page-room{
         header .content{
             flex-direction: row;

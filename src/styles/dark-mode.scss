@@ -1,0 +1,17 @@
+.dark-mode{
+    align-items: center;
+
+    h1{
+        font-size: 24px;
+    }
+}
+
+.dark{
+    background: #29292e;
+}
+
+body.dark #page-room main .room-title h1,
+body.dark .dark-mode h1,
+body.dark #page-room main form .form-footer .user-info > span{
+    color: #f8f8f8;
+}

@@ -10,10 +10,13 @@ import { database } from '../services/firebase'
 import { Button } from '../components/Button'
 import { Question } from '../components/Question'
 import { RoomCode } from '../components/RoomCode'
+import { Theme } from '../components/Theme'
+
 // import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
 
 import '../styles/room.scss'
+import '../styles/responsive.scss'
 
 type RoomParams = {
     id: string;
@@ -61,6 +64,7 @@ export function AdminRoom() {
                     <div>
                         <RoomCode code={roomId} />
                         <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
+                        <Theme />
                     </div>
                 </div>
             </header>
