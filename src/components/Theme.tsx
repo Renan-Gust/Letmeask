@@ -12,7 +12,7 @@ export function Theme() {
       },[toggle])
 
     return(
-        <div className="dark-mode">            
+        <div className="dark-mode">
             <Button  onClick={()=> setToggle(!toggle)} className="button">
                 { toggle ? "Claro" : "Escuro" }
             </Button>
